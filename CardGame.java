@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CardGame {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         // Making a list that will contain every card in the stack
         List<Card> deck = new ArrayList<>();
 
@@ -12,12 +12,23 @@ public class CardGame {
         String[] symbols = {"Hearts", "Diamonds", "Clubs", "Spades"};
 
         // Listing different card names
-        // For example 2 is 2, J is 11, and A is 14.
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"};
 
         // Listing the number values
+        // For example 2 is 2, J is 11, and A is 14.
         int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
 
+
+        // Adding all cards to the stack
+        // Going through each symbol, and for each symbol, the card names.
+
+        for (String symbol : symbols) {
+            for (int i = 0; i < ranks.length; i++) {
+                // Making a new card with a name, symbol and value
+                Card card = new Card(ranks[i], symbol, values[i]);
+                deck.add(card); // Adding the new card to the stack.
+            }
+        }
     }
 
     // This class represents a card
