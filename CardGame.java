@@ -29,6 +29,9 @@ public class CardGame {
                 deck.add(card); // Adding the new card to the stack.
             }
         }
+
+    // Shuffling the cards to ensure that they are in random order
+    Collections.shuffle(deck);
     }
 
     // This class represents a card
