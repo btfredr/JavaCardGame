@@ -12,8 +12,24 @@ public class CardGame {
     // Each card has it's own symbol, and a value
 
     static class Card {
-        String color; // Card symbol
+        String symbol; // Card symbol
         String rank; // Card name, 1, 2, 3, Q, K, J etc. 
         int value; // Card number value used to decide who has the highest card
+
+        // When making a new Card, assign it a name, symbol and a value
+        Card(String symbol, String rank, int value) {
+            this.symbol = symbol;
+            this.rank = rank;
+            this.value = value;
+        };
+
+        // This methods writes the card out as text
+        public String toString() {
+            return rank + " of " + symbol;
+        }
     }
+
+
+
+
 }
