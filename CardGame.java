@@ -11,9 +11,13 @@ public class CardGame {
         // Listing different symbols
         String[] symbols = {"Hearts", "Diamonds", "Clubs", "Spades"};
 
-        // Listing different ranks
+        // Listing different card names
         // For example 2 is 2, J is 11, and A is 14.
         String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"};
+
+        // Listing the number values
+        int[] values = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+
     }
 
     // This class represents a card
