@@ -5,7 +5,11 @@ import java.util.List;
 
 public class CardGame {
     public void main(String[] args) {
+        // Making a list that will contain every card in the stack
+        List<Card> deck = new ArrayList<>();
 
+        // Listing different symbols
+        String[] symbols = {"Hearts", "Diamonds", "Clubs", "Spades"};
     }
 
     // This class represents a card
