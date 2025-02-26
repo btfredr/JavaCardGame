@@ -38,6 +38,20 @@ public class CardGame {
 
     // Giving a card to player 2 by grabbing the next card.
     Card player2Card = deck.remove(0);
+
+
+    // Telling user which cards the players got
+    System.out.println("Player 1 recieved: " + player1Card);
+    System.out.println("Player 2 recieved: " + player2Card);
+
+    // Comparing the card values to see who won
+    if (player1Card.value > player2Card.value) {
+        System.out.print("Player 1 won!");
+    } else if (player2Card.value > player1Card.value) {
+        System.out.print("Player 2 won!");
+    } else {
+        System.out.print("It's a draw!");
+    }
     }
 
     // This class represents a card
