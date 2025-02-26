@@ -32,6 +32,12 @@ public class CardGame {
 
     // Shuffling the cards to ensure that they are in random order
     Collections.shuffle(deck);
+
+    // Giving a card to player 1 by grabbing the card that's on top of the stack
+    Card player1Card = deck.remove(0);
+
+    // Giving a card to player 2 by grabbing the next card.
+    Card player2Card = deck.remove(0);
     }
 
     // This class represents a card
